@@ -4,6 +4,8 @@
  */
 package view;
 
+import bean.MpvUsuarios;
+import dao.DaoMpvUsuarios;
 import javax.swing.JOptionPane;
 
 /**
@@ -336,6 +338,19 @@ public class JDlgMpvUsuarios extends javax.swing.JDialog {
     }//GEN-LAST:event_jBtnAlterarActionPerformed
 
     private void jBtnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmarActionPerformed
+        MpvUsuarios user = new MpvUsuarios();
+        user.setMpvIdUsuarios(Integer.parseInt(jTxtCodigo.getText())); //Conversão de String para Int
+        user.setMpvNome(jTxtApelido.getText());
+        user.setMpvApelido(jTxtApelido.getText());
+        user.setMpvCpf(jFmtCpf.getText());
+        user.setMpvDataNascimento(jFmtDataNascimento.getText());
+        user.setMpvNivel(jCboNivel.getSelectedIndex());
+        user.setMpvSenha(new String(jPwfSenha.getPassword()));
+        user.setMpvAtivo(jChbAtivo.getText());
+        
+        DaoMpvUsuarios dao = new DaoMpvUsuarios();
+        dao.insert(user);
+        
         desabilitar();
     }//GEN-LAST:event_jBtnConfirmarActionPerformed
 

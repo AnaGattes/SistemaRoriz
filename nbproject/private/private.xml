@@ -5,7 +5,9 @@
         <group>
             <file>file:/C:/Users/u07740243132/Documents/NetBeansProjects/SistemaRoriz/src/testes/JdbcSelect.java</file>
             <file>file:/C:/Users/u07740243132/Documents/NetBeansProjects/SistemaRoriz/src/dao/DaoAbstract.java</file>
+            <file>file:/C:/Users/u07740243132/Documents/NetBeansProjects/SistemaRoriz/src/bean/MpvUsuarios.java</file>
             <file>file:/C:/Users/u07740243132/Documents/NetBeansProjects/SistemaRoriz/src/dao/DaoMpvUsuarios.java</file>
+            <file>file:/C:/Users/u07740243132/Documents/NetBeansProjects/SistemaRoriz/src/testes/JdbcCrud.java</file>
         </group>
     </open-files>
 </project-private>
